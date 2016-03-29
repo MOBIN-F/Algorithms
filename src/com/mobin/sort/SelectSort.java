@@ -7,8 +7,6 @@ package com.mobin.sort;
  * 外循环：交换元素
  */
 public class SelectSort {
-
-
     private static void selectSort(int[] arr) {
              for(int i= 0; i < arr.length; i ++){
                  int temp = arr[i];

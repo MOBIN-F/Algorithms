@@ -2,6 +2,7 @@ package com.mobin.sort;
 
 /**
  * Created by Mobin on 2016/2/22.
+ * 排序思路：每次将一个待排序的元素与已排序的元素进行逐一比较，直到找到合适的位置按大小插入。
  */
 public class InsertSort {
     public static  void insertSort(int[] arr){

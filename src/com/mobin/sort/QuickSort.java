@@ -8,7 +8,7 @@ public class QuickSort {
         int left = _left;
         int right = _right;
         int temp = 0;
-        if(left <= right){   //待排序的元素至少有两个的情况
+        if(left < right){   //待排序的元素至少有两个的情况
             temp = arr[left];  //待排序的第一个元素作为基准元素
             while(left != right){   //从左右两边交替扫描，直到left = right
 
@@ -27,7 +27,7 @@ public class QuickSort {
         }
     }
     public static void main(String[] args) {
-        int array[] = {10,5,3,1,7,2,8};
+        int array[] = {1,5,3,1,7,2,8};
         System.out.println("排序之前：");
         System.out.println("排序之前：");
         for(int element : array){

@@ -2,8 +2,9 @@ package com.mobin.sort;
 
 /**
  * Created by Mobin on 2016/4/6.
- * 步骤：先构造堆
- * 再将最顶元素与最后一个元素交换，再调整堆
+ * 步骤一：先构造堆
+ * 步骤二：再将最顶元素与最后一个元素交换，
+ * 步骤三：再调整堆
  */
 public class HeapSort {
     private static void heapSort(int[] arr) {
@@ -11,7 +12,6 @@ public class HeapSort {
         for(int i = len/2 - 1; i >=0; i --){ //堆构造
              sink(arr,i,len);
         }
-
         while (len >=0){
             swap(arr,0,len--);
             sink(arr,0,len);

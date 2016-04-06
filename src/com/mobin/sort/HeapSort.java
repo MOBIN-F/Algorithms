@@ -2,6 +2,8 @@ package com.mobin.sort;
 
 /**
  * Created by Mobin on 2016/4/6.
+ * 步骤：先构造堆
+ * 再将最顶元素与最后一个元素交换，再调整堆
  */
 public class HeapSort {
 

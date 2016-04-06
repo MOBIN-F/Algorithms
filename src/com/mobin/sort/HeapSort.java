@@ -12,8 +12,8 @@ public class HeapSort {
              sink(arr,i,len);
         }
 
-        while (len > 0){
-            swap(arr,0,len --);
+        while (len >=0){
+            swap(arr,0,len--);
             sink(arr,0,len);
 
         }
@@ -21,7 +21,7 @@ public class HeapSort {
     }
 
 public static  void sink(int[] arr,int i,int len){
-    while(2*i <= len){
+    while(2*i < len){
         int j = 2*i + 1;
         int left = j;
         int right = j + 1;

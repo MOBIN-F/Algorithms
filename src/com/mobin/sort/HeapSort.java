@@ -6,8 +6,6 @@ package com.mobin.sort;
  * 再将最顶元素与最后一个元素交换，再调整堆
  */
 public class HeapSort {
-
-
     private static void heapSort(int[] arr) {
         int len = arr.length -1;
         for(int i = len/2 - 1; i >=0; i --){ //堆构造
@@ -17,11 +15,8 @@ public class HeapSort {
         while (len >=0){
             swap(arr,0,len--);
             sink(arr,0,len);
-
         }
-
     }
-
 public static  void sink(int[] arr,int i,int len){
     while(2*i < len){
         int j = 2*i + 1;
@@ -39,14 +34,11 @@ public static  void sink(int[] arr,int i,int len){
 
     }
 }
-
     public static  void swap(int[] arr,int i,int len){
              int temp = arr[i];
               arr[i] = arr[len];
              arr[len] = temp;
     }
-
-
     public static void main(String[] args) {
         int array[] = {1,5,3,1,7,2,8};
         System.out.println("排序之前：");

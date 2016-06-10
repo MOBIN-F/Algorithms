@@ -4,9 +4,9 @@ package com.mobin.BinaryTree;
  * Created by Mobin on 2016/4/21.
  */
 public class Node {
-    private int value;
-    private Node left;
-    private Node right;
+     int value;
+     Node left;
+     Node right;
 
     public Node(int value, Node left, Node right) {
         this.value = value;

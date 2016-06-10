@@ -29,9 +29,9 @@ public class Merge {
             aux[k] = a[k];
 
         for (int k = lo; k <= hi; k ++){
-            if(i > mid)
+            if(i > mid)     //说明左边已元素，只需要将右边的元素添加到a[k]中
                 a[k] = aux[j ++];
-            else if(j > hi)
+            else if(j > hi)    //说明右边已元素，只需要将左边的元素添加到a[k]中
                 a[k] = aux[i ++];
             else if(less(aux[j] , aux[i]))
                 a[k] = aux[j ++];
